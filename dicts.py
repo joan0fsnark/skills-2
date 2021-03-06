@@ -43,7 +43,7 @@ def count_words(phrase):
 
 
 def print_melon_at_price(price):
-    """Given a price, print all melons available at that price, in alphabetical order.
+    """Given a price, print all  available at that price, in alphabetical order.
 
     Here are a list of melon names and prices:
 
@@ -53,9 +53,9 @@ def print_melon_at_price(price):
     Musk 3.25
     Crenshaw 3.25
     Christmas 14.25
-    (it was a bad year for Christmas melons -- supply is low!)
+    (it was a bad year for Christmas  -- supply is low!)
 
-    If there are no melons at that price print "None found"
+    If there are no  at that price print "None found"
 
         >>> print_melon_at_price(2.50)
         Cantaloupe
@@ -67,8 +67,22 @@ def print_melon_at_price(price):
         >>> print_melon_at_price(5.50)
         None found
     """
+    melons = {
+    'Honeydew': 4.00,
+    'Cantaloupe': 2.00,
+    'Watermelon': 1.5,
+    'Musk': 3.00,
+    'Crenshaw': 3.25,
+    'Christmas': 14.25,
+    }
 
-    return
+    sorted_melons = sorted(melons)
+
+    for item in sorted_melons:
+        if melons[item] == price:
+            return item
+        else:
+            return "None found"
 
 
 def translate_to_pirate_talk(phrase):
