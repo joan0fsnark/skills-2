@@ -44,49 +44,61 @@
 
 """2. Road Class"""
 
+class Road:
 
-# Replace this with your code
+    def __init__(self, num_lanes, speed_limit):
+        self.num_lanes = 2
+        self.speed_limit = 25
 
+        class Road(road_1):
+            self.num_lanes = 4
+            self.speed_limit = 60
+            
+        class Road(road_2):
+            
 
-"""3. Update Password"""
-
-
-class User:
-    """A user object."""
-
-    def __init__(self, username, password):
-        """Create a user with the given username and password."""
-
-        self.username = username
-        self.password = password
-
-
-"""4. Build a Library"""
+            
 
 
-class Book(object):
-    """A Book object."""
-
-    def __init__(self, title, author):
-        """Create a book with the given title and author."""
-
-        self.title = title
-        self.author = author
+# """3. Update Password"""
 
 
-"""5. Rectangle"""
+# class User:
+#     """A user object."""
+
+#     def __init__(self, username, password):
+#         """Create a user with the given username and password."""
+
+#         self.username = username
+#         self.password = password
 
 
-class Rectangle:
-    """A rectangle."""
+# """4. Build a Library"""
 
-    def __init__(self, length, width):
-        """Create a rectangle with the given length and width."""
 
-        self.length = float(length)
-        self.width = float(width)
+# class Book(object):
+#     """A Book object."""
 
-    def calculate_area(self):
-        """Return the area of the rectangle."""
+#     def __init__(self, title, author):
+#         """Create a book with the given title and author."""
 
-        return self.length * self.width
+#         self.title = title
+#         self.author = author
+
+
+# """5. Rectangle"""
+
+
+# class Rectangle:
+#     """A rectangle."""
+
+#     def __init__(self, length, width):
+#         """Create a rectangle with the given length and width."""
+
+#         self.length = float(length)
+#         self.width = float(width)
+
+#     def calculate_area(self):
+#         """Return the area of the rectangle."""
+
+#         return self.length * self.width
