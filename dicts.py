@@ -3,7 +3,7 @@
 **IMPORTANT:** These problems are meant to be solved using
 dictionaries and sets.
 """
-
+"SM"
 def count_words(phrase):
     """Count unique words in a string.
 
